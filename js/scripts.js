@@ -6,6 +6,7 @@ $(document).ready(function() {
       listItems.forEach(function(listItem){
         var userInput = $("#" + listItem).val();
         $('#myList').prepend('<li>'+userInput.toUpperCase()+'</li>')
+        $("#form").toggle();
       });
 
 
